@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/fragmentHome">
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.fcascan.clase4.fragments.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/fragmentTab1"
+        android:name="com.fcascan.clase4.fragments.FragmentTab1"
+        android:label="fragment_tab1"
+        tools:layout="@layout/fragment_tab1" />
+    <fragment
+        android:id="@+id/fragmentTab2"
+        android:name="com.fcascan.clase4.fragments.FragmentTab2"
+        android:label="fragment_tab2"
+        tools:layout="@layout/fragment_tab2" />
+    <fragment
+        android:id="@+id/fragmentTab3"
+        android:name="com.fcascan.clase4.fragments.FragmentTab3"
+        android:label="fragment_tab3"
+        tools:layout="@layout/fragment_tab3" />
+    <fragment
+        android:id="@+id/fragmentTools"
+        android:name="com.fcascan.clase4.fragments.FragmentTools"
+        android:label="fragment_tools"
+        tools:layout="@layout/fragment_tools" />
+    <fragment
+        android:id="@+id/fragmentSettings"
+        android:name="com.fcascan.clase4.fragments.FragmentSettings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_fragmentSettings_to_fragmentTab1"
+            app:destination="@id/fragmentTab1" />
+        <action
+            android:id="@+id/action_fragmentSettings_to_fragmentTab2"
+            app:destination="@id/fragmentTab2" />
+        <action
+            android:id="@+id/action_fragmentSettings_to_fragmentTab3"
+            app:destination="@id/fragmentTab3" />
+    </fragment>
+</navigation>
